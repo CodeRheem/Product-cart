@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="main.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | Product list with cart</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="text-3xl font-bold ml-7 py-5">Desserts</div>
+    <div class="grid grid-cols-1 gap-5 justify-items-center mx-7">
+      <div>
+        <div>
+          <img src="assets/images/image-waffle-mobile.jpg" alt="Waffles with Berries" class="rounded-2xl relative">
+          <div class="border border-black shadow-2xs bg-white rounded-3xl flex justify-self-center absolute -m-5 px-7 py-2 ">
+            <img src="assets/images/icon-add-to-cart.svg" alt="Add to Cart" class="mr-1">
+            <button class=" font-bold ">Add to Cart</button>
+          </div>
+        </div>
+        <div class="mt-10 flex flex-col justify-self-start gap-4">
+          <div class="text-[13px] text-red-200 font-[100px]">Waffle</div>
+          <div class="-mt-3 font-[450] text-[15px]">Waffle with Berries</div>
+          <div class="-mt-3 text-rose-400 font-[450]">$6.50</div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="assets/images/image-creme-brulee-mobile.jpg" alt="Vanilla Bean Creme Brûlée" class="rounded-2xl">
+          <div class="border border-black shadow-2xs bg-white rounded-3xl flex justify-self-center absolute -m-5 px-7 py-2 ">
+            <img src="assets/images/icon-add-to-cart.svg" alt="Add to Cart" class="mr-1">
+            <button class=" font-bold ">Add to Cart</button>
+          </div>
+        </div>
+        <div class="mt-10 flex flex-col justify-self-start gap-4">
+          <div class="text-[13px] text-red-200 font-[100px]">Crème Brûlée</div>
+          <div class="-mt-3 font-[450] text-[15px]">Vanilla Bean Crème Brûlée</div>
+          <div class="-mt-3 text-rose-400 font-[450]">$7.00</div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="assets/images/image-macaron-mobile.jpg" alt="Macaron Mix of Five" class="rounded-2xl">
+          <div class="border border-black shadow-2xs bg-white rounded-3xl flex justify-self-center absolute -m-5 px-7 py-2 ">
+            <img src="assets/images/icon-add-to-cart.svg" alt="Add to Cart" class="mr-1">
+            <button class=" font-bold ">Add to Cart</button>
+          </div>
+        </div>
+        <div class="mt-10 flex flex-col justify-self-start gap-4">
+          <div class="text-[13px] text-red-200 font-[100px]">Macaron</div>
+          <div class="-mt-3 font-[450] text-[15px]">Macaron Mix of Five</div>
+          <div class="-mt-3 text-rose-400 font-[450]">$8.00</div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="assets/images/image-tiramisu-mobile.jpg" alt="Classic Tiramisu" class="rounded-2xl">
+          <div class="border border-black shadow-2xs bg-white rounded-3xl flex justify-self-center absolute -m-5 px-7 py-2 ">
+            <img src="assets/images/icon-add-to-cart.svg" alt="Add to Cart" class="mr-1">
+            <button class=" font-bold ">Add to Cart</button>
+          </div>
+        </div>
+        <div class="mt-10 flex flex-col justify-self-start gap-4">
+          <div class="text-[13px] text-red-200 font-[100px]">Tiramisu</div>
+          <div class="-mt-3 font-[450] text-[15px]">Classic Tiramisu</div>
+          <div class="-mt-3 text-rose-400 font-[450]">$5.50</div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="assets/images/image-baklava-mobile.jpg" alt="Pistachio Baklava" class="rounded-2xl">
+          <div class="border border-black shadow-2xs bg-white rounded-3xl flex justify-self-center absolute -m-5 px-7 py-2 ">
+            <img src="assets/images/icon-add-to-cart.svg" alt="Add to Cart" class="mr-1">
+            <button class=" font-bold ">Add to Cart</button>
+          </div>
+        </div>
+        <div class="mt-10 flex flex-col justify-self-start gap-4">
+          <div class="text-[13px] text-red-200 font-[100px]">Baklava</div>
+          <div class="-mt-3 font-[450] text-[15px]">Pistachio Baklava</div>
+          <div class="-mt-3 text-rose-400 font-[450]">$4.00</div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="assets/images/image-meringue-mobile.jpg" alt="Lemon Meringue Pie" class="rounded-2xl">
+          <div class="border border-black shadow-2xs bg-white rounded-3xl flex justify-self-center absolute -m-5 px-7 py-2 ">
+            <img src="assets/images/icon-add-to-cart.svg" alt="Add to Cart" class="mr-1">
+            <button class=" font-bold ">Add to Cart</button>
+          </div>
+        </div>
+        <div class="mt-10 flex flex-col justify-self-start gap-4">
+          <div class="text-[13px] text-red-200 font-[100px]">Pie</div>
+          <div class="-mt-3 font-[450] text-[15px]">Lemon Meringue Pie</div>
+          <div class="-mt-3 text-rose-400 font-[450]">$5.00</div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="assets/images/image-cake-mobile.jpg" alt="Red Velvet Cake" class="rounded-2xl">
+          <div class="border border-black shadow-2xs bg-white rounded-3xl flex justify-self-center absolute -m-5 px-7 py-2 ">
+            <img src="assets/images/icon-add-to-cart.svg" alt="Add to Cart" class="mr-1">
+            <button class=" font-bold ">Add to Cart</button>
+          </div>
+        </div>
+        <div class="mt-10 flex flex-col justify-self-start gap-4">
+          <div class="text-[13px] text-red-200 font-[100px]">Cake</div>
+          <div class="-mt-3 font-[450] text-[15px]">Red Velvet Cake</div>
+          <div class="-mt-3 text-rose-400 font-[450]">$4.50</div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="assets/images/image-brownie-mobile.jpg" alt="Salted Caramel Cake" class="rounded-2xl">
+          <div class="border border-black shadow-2xs bg-white rounded-3xl flex justify-self-center absolute -m-5 px-7 py-2 ">
+            <img src="assets/images/icon-add-to-cart.svg" alt="Add to Cart" class="mr-1">
+            <button class=" font-bold ">Add to Cart</button>
+          </div>
+        </div>
+        <div class="mt-10 flex flex-col justify-self-start gap-4">
+          <div class="text-[13px] text-red-200 font-[100px]">Brownie</div>
+          <div class="-mt-3 font-[450] text-[15px]">Salted Caramel Brownie</div>
+          <div class="-mt-3 text-rose-400 font-[450]">$4.50</div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="assets/images/image-panna-cotta-mobile.jpg" alt="Vanilla Panna Cotta" class="rounded-2xl">
+          <div class="border border-black shadow-2xs bg-white rounded-3xl flex justify-self-center absolute -m-5 px-7 py-2 ">
+            <img src="assets/images/icon-add-to-cart.svg" alt="Add to Cart" class="mr-1">
+            <button class=" font-bold ">Add to Cart</button>
+          </div>
+        </div>
+        <div class="mt-10 flex flex-col justify-self-start gap-4">
+          <div class="text-[13px] text-red-200 font-[100px]">Panna Cotta</div>
+          <div class="-mt-3 font-[450] text-[15px]">Vanilla Panna Cotta</div>
+          <div class="-mt-3 text-rose-400 font-[450]">$6.50</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  Your Cart (<!-- Quantity -->)
+  Your added items will appear here
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
